@@ -257,6 +257,7 @@ input::placeholder {
   justify-content: center;
   padding: 2rem;
   display: block;
+  position: relative;
 }
 .imaga {
   text-align: center;
@@ -265,13 +266,14 @@ input::placeholder {
 .cards h5 {
   border: 1px solid #8b5617;
   font-weight: 700;
-  font-size: 16px;
+  font-size: 1rem;
   align-items: center;
   color: #8b5617;
   text-align: center;
   cursor: pointer;
   border-radius: 0.3rem;
   padding: 0.5rem 0.4rem;
+  width: 100%;
 }
 
 .cards h5:hover {
@@ -324,7 +326,7 @@ input::placeholder {
 .give-cont {
   background-color: #fcc5874a;
   text-align: left;
-  padding: 3rem 4.6rem 2rem;
+  padding: 2.5rem 3.5rem 2rem;
   width: 50%;
 }
 
@@ -565,6 +567,7 @@ input::placeholder {
 .flexa {
   display: flex;
   justify-content: center;
+  width: 100%;
 }
 
 .flexa input {
@@ -660,7 +663,7 @@ footer li:hover {
   .help {
     width: 100%;
   }
-  .section-uno {
+  .sub-uno {
     gap: 1.3rem;
   }
   .pop-cont {
@@ -673,7 +676,7 @@ footer li:hover {
     width: 20rem;
   }
   #imaga img {
-    width: 90%;
+    width: 95%;
   }
 
   .give-cont {
@@ -737,10 +740,125 @@ footer li:hover {
   .section-uno {
     gap: 1rem;
   }
+  .sub-uno img {
+    width: 100%;
+  }
+  .extras {
+    gap: 1rem;
+  }
+  .extra-props {
+    width: 30%;
+  }
+  .extra-props img {
+    width: 100%;
+  }
 }
 @media (max-width: 768px) {
+  header {
+    background-size: cover;
+    height: 23rem;
+  }
+  .sub-header {
+    justify-content: space-between;
+    padding: 1rem;
+  }
+  .sub-header li {
+    font-size: 0.7rem;
+  }
+  .sub-header li:hover,
+  .log:hover,
+  .sign:hover {
+    padding: 0.3rem;
+    font-weight: 600;
+  }
+
+  .texty {
+    font-size: 2.5rem;
+    line-height: 100%;
+    margin-top: 1rem;
+  }
+  .give-cont {
+    padding-bottom: 0.5rem;
+  }
+  .give-cont h3 {
+    font-size: 1.1rem;
+  }
+
+  .give-cont h6 {
+    font-size: 1rem;
+    line-height: 120%;
+  }
+  .sub-give p {
+    font-size: 1rem;
+    line-height: 100%;
+  }
+  .sub-give {
+    margin-bottom: 0.5rem;
+    gap: 1rem;
+  }
+  .quests {
+    padding: 0;
+    gap: ;
+    flex-direction: column;
+    align-items: center;
+  }
+  .got h2 {
+    font-size: 2.2rem;
+  }
+  .got h3,
+  p {
+    text-align: justify;
+  }
+  #accordion {
+    margin-bottom: 0.5rem;
+  }
+
+  .ready {
+    padding: 4rem 11rem 8rem;
+  }
+  .ready p {
+    text-align: center;
+  }
+  .flexa input,
+  .butts {
+    padding: 1rem;
+    font-size: 1rem;
+  }
+
+  footer {
+    padding-right: 6rem;
+    padding-left: 4rem;
+  }
 }
 
+@media (max-width: 700px) {
+  .pops p {
+    text-align: center;
+  }
+  .givers {
+    flex-direction: column;
+  }
+  .give-cont,
+  .give-img {
+    width: 90%;
+    margin: auto;
+  }
+  .give-cont h6,
+  .sub-give p {
+    line-height: 200%;
+  }
+  .sub-header li,
+  .sign,
+  .log {
+    font-size: 13px;
+  }
+
+  .sign,
+  .sub-header li:hover,
+  .log:hover {
+    padding: 2px;
+  }
+}
 @media (max-width: 425px) {
 }
 
