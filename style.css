@@ -41,21 +41,21 @@ header {
   padding: 3rem;
 }
 
-.sub-header ul {
+.topnav {
   display: flex;
   list-style: none;
   gap: 1rem;
   align-items: center;
 }
 
-.sub-header li {
+.topnav li {
   cursor: pointer;
   font-weight: 600;
   font-size: 1rem;
   color: #ffffff;
 }
 
-.sub-header li:hover {
+.topnav li:hover {
   cursor: pointer;
   font-weight: 800;
   font-size: 1rem;
@@ -99,7 +99,11 @@ header {
   padding: 0.8rem 1.8rem;
   border-radius: 0.3rem;
 }
-
+.topnav .icon {
+  display: none;
+  color: #f7f7f7;
+  font-size: xx-large;
+}
 .search {
   width: 60%;
   height: 4rem;
@@ -553,7 +557,7 @@ input::placeholder {
 
 .ready h3 {
   font-weight: 800;
-  font-size: 48px;
+  font-size: 3rem;
   color: #643c0f;
   margin-bottom: 36px;
 }
@@ -777,24 +781,43 @@ footer li:hover {
     line-height: 100%;
     margin-top: 1rem;
   }
+  .pops p {
+    text-align: center;
+  }
+  .cards p {
+    font-size: 1rem;
+    line-height: 100%;
+    margin-bottom: 1rem;
+  }
+  .cards h5 {
+    font-size: medium;
+    padding: 2px;
+    width: 90%;
+  }
+
   .give-cont {
     padding-bottom: 0.5rem;
+    padding-top: 0.7rem;
   }
   .give-cont h3 {
     font-size: 1.1rem;
   }
 
   .give-cont h6 {
-    font-size: 1rem;
+    font-size: 0.8rem;
     line-height: 120%;
+    margin-bottom: 0.8rem;
   }
   .sub-give p {
-    font-size: 1rem;
-    line-height: 100%;
+    font-size: 0.8rem;
+    line-height: 90%;
   }
   .sub-give {
-    margin-bottom: 0.5rem;
     gap: 1rem;
+  }
+  .sub-give img {
+    width: 20px;
+    height: 20px;
   }
   .quests {
     padding: 0;
@@ -829,12 +852,20 @@ footer li:hover {
     padding-right: 6rem;
     padding-left: 4rem;
   }
+  .dev {
+    font-size: 12px;
+  }
+  .pol {
+    font-size: 12px;
+    gap: 0.6rem;
+  }
+  .copy {
+    gap: 1rem;
+    justify-content: space-between;
+  }
 }
 
 @media (max-width: 700px) {
-  .pops p {
-    text-align: center;
-  }
   .givers {
     flex-direction: column;
   }
@@ -858,8 +889,38 @@ footer li:hover {
   .log:hover {
     padding: 2px;
   }
+  footer {
+    padding-left: 2rem;
+    padding-right: 3rem;
+  }
+}
+@media (max-width: 690px) {
+  .topnav li,
+  .topnav p {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+  .topnav.responsive {
+    position: relative;
+  }
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
 }
 @media (max-width: 425px) {
+  .topnav.responsive li {
+    float: none;
+    flex-direction: column;
+    text-align: left;
+  }
+  footer {
+    flex-direction: column;
+  }
 }
 
 @media (max-width: 375px) {
