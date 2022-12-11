@@ -146,11 +146,10 @@ input::placeholder {
 
 .sub-uno {
   display: flex;
-  gap: 3rem;
-  margin: auto;
+  gap: 4rem;
+  margin: 3rem 0 0;
   justify-content: center;
-  margin-top: 3rem;
-  width: 90%;
+  width: 100%;
 }
 .section-uno img {
   cursor: pointer;
@@ -309,7 +308,7 @@ input::placeholder {
   cursor: pointer;
 }
 .extra-props:hover {
-  transition: ease-in 0.5s;
+  background-color: #e9b376;
 }
 
 .extra-props p {
@@ -431,9 +430,9 @@ input::placeholder {
   gap: 1rem;
   margin-top: 1.3rem;
 }
-.reviewer img {
+/* .reviewer img {
   width: ;
-}
+} */
 
 .flex-reviews {
   /* overflow-x: scroll; */
@@ -465,13 +464,11 @@ input::placeholder {
   font-weight: 800;
   font-size: 40px;
   color: #5c370d;
-  margin-top: 16px;
 }
 .got h3 {
   font-weight: 700;
   font-size: 32px;
   color: #5c370d;
-  margin-top: 16px;
 }
 .got p {
   font-weight: 400;
@@ -680,7 +677,7 @@ footer li:hover {
     width: 20rem;
   }
   #imaga img {
-    width: 95%;
+    width: 100%;
   }
 
   .give-cont {
@@ -775,7 +772,9 @@ footer li:hover {
     padding: 0.3rem;
     font-weight: 600;
   }
-
+  .section-uno {
+    padding: 0 1rem;
+  }
   .texty {
     font-size: 2.5rem;
     line-height: 100%;
@@ -819,11 +818,12 @@ footer li:hover {
     width: 20px;
     height: 20px;
   }
+  .review {
+    padding: 42px 0 35px 60px;
+  }
   .quests {
-    padding: 0;
-    gap: ;
-    flex-direction: column;
-    align-items: center;
+    padding: 40px 50px;
+    gap: 5rem;
   }
   .got h2 {
     font-size: 2.2rem;
@@ -837,7 +837,7 @@ footer li:hover {
   }
 
   .ready {
-    padding: 4rem 11rem 8rem;
+    padding: 10rem 11rem 13rem;
   }
   .ready p {
     text-align: center;
@@ -849,8 +849,8 @@ footer li:hover {
   }
 
   footer {
-    padding-right: 6rem;
-    padding-left: 4rem;
+    padding-right: 4rem;
+    padding-left: 3rem;
   }
   .dev {
     font-size: 12px;
@@ -917,6 +917,80 @@ footer li:hover {
     float: none;
     flex-direction: column;
     text-align: left;
+  }
+
+  .search {
+    height: 3rem;
+    padding: 0 1.2rem;
+  }
+  .texty {
+    font-weight: 600;
+    font-size: 2rem;
+  }
+  .overlay {
+    height: 90%;
+  }
+  .text {
+    font-size: 8px;
+    top: 30%;
+  }
+  .seeker {
+    font-size: 8px;
+    font-weight: 500;
+    top: 65%;
+    padding: 0.3rem 0.5rem;
+  }
+  .cards {
+    padding: 1rem 1rem 2.5rem;
+  }
+  .cards p {
+    font-weight: 600;
+    font-size: 12px;
+    /* position: absolute; */
+  }
+  .cards h5 {
+    position: absolute;
+    padding: 0.3rem;
+    font-size: 10px;
+    font-weight: 500;
+    top: 80%;
+    left: 5%;
+  }
+  .review {
+    padding-left: 20px;
+
+    margin-top: 20px;
+  }
+  .what-reviews {
+    gap: 20px;
+  }
+  .what-reviews h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 100%;
+  }
+  .what-reviews p {
+    font-size: 1rem;
+    margin-right: 20px;
+  }
+  .said {
+    font-size: 1.5rem;
+    margin-bottom: 25px;
+  }
+  .see {
+    margin-right: 20px;
+    font-size: 16px;
+  }
+  .quests {
+    flex-direction: column;
+    gap: 3rem;
+  }
+  .got,
+  .how {
+    width: 100%;
+  }
+  .ready {
+    padding: 12rem 2rem 15rem;
   }
   footer {
     flex-direction: column;
