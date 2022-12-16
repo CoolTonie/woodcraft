@@ -23,8 +23,12 @@
     </div>
     <header>
       <div class="sub-header">
-        <a href="#"><img src="./images/logo.png" class="logo" alt="" /></a>
-        <nav>
+        <div class="sub-headers">
+          <a href="#"><img src="./images/logo.png" class="logo" alt="" /></a>
+           <span class="icon"><i class="fa fa-bars"></i></span>
+        </div>
+        <div class="subdiv">
+          <nav class="subnav">
           <ul class="topnav" id="myTopnav">
             <li>Home</li>
             <li>Shop</li>
@@ -33,11 +37,10 @@
             <li>Contact Us</li>
             <p class="log">Log in</p>
             <p class="sign">Sign up</p>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-              <i class="fa fa-bars"></i>
-            </a>
           </ul>
         </nav>
+        </div>
+        
       </div>
       <input type="text" class="search" placeholder="search here" />
       <h1 class="texty">
@@ -452,31 +455,44 @@
     </main>
   </body>
   <script>
-    function myFunction() {
-      var x = document.getElementById("myTopnav");
-      if (x.className === "topnav") {
-        x.className += " responsive";
-      } else {
-        x.className = "topnav";
-      }
-    }
-    var acc = document.getElementsByClassName("accordion");
-    var i;
+var topnav = document.querySelector('.topnav');
+var hamburgerIcon = document.querySelector('.icon');
 
-    for (i = 0; i < acc.length; i++) {
-      acc[i].addEventListener("click", function () {
-        /* Toggle between adding and removing the "active" class,
-    to highlight the button that controls the panel */
-        this.classList.toggle("active");
+if(window.innerWidth <= 690) {
+  hamburgerIcon.addEventListener('click', ()=>{
+    topnav.classList.toggle('open')
+  })
+}
+// setTimeout(function(){
+//             document.getElementsByClassName("open").style.height = "260px";
+//        }, 200);
 
-        /* Toggle between hiding and showing the active panel */
-        var panel = this.nextElementSibling;
-        if (panel.style.display === "block") {
-          panel.style.display = "none";
-        } else {
-          panel.style.display = "block";
-        }
-      });
-    }
+    // function myFunction() {
+
+    //   var x = document.getElementById("myTopnav");
+    //   if (x.className === "topnav") {
+    //     x.className += " responsive";
+    //   } else {
+    //     x.className = "topnav";
+    //   }
+    // }
+    // var acc = document.getElementsByClassName("accordion");
+    // var i;
+
+    // for (i = 0; i < acc.length; i++) {
+    //   acc[i].addEventListener("click", function () {
+    //     /* Toggle between adding and removing the "active" class,
+    // to highlight the button that controls the panel */
+    //     this.classList.toggle("active");
+
+    //     /* Toggle between hiding and showing the active panel */
+    //     var panel = this.nextElementSibling;
+    //     if (panel.style.display === "block") {
+    //       panel.style.display = "none";
+    //     } else {
+    //       panel.style.display = "block";
+    //     }
+    //   });
+    // }
   </script>
 </html>
