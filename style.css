@@ -39,7 +39,6 @@ header {
   justify-content: space-around;
   align-items: center;
   padding: 3rem;
-  
 }
 
 .topnav {
@@ -100,7 +99,7 @@ header {
   padding: 0.8rem 1.8rem;
   border-radius: 0.3rem;
 }
-.topnav .icon {
+.sub-headers .icon {
   display: none;
   color: #f7f7f7;
   font-size: xx-large;
@@ -895,41 +894,46 @@ footer li:hover {
 }
 @media (max-width: 690px) {
   .topnav li,
-  .topnav p {
+  .topnav p,
+  .sub-headers .icon {
     display: block;
   }
-  
-.topnav{
-  width: 100%;
-  background-color: hsla(0, 0%, 0%, 0.6);
-  flex-direction:column;
-  display: flex;
-  height: 0px;
-  overflow-y: hidden;
-  position: absolute;
-  transition: all 0.4s ease-in-out;
-}
-.subnav{
-  position: relative;
-}
-.open{
-  width: 100%;
-  background-color: hsla(0, 0%, 0%, 0.6);
-  flex-direction:column;
-  display: flex;
-  height: 210px;
-  transition: all 0.4s ease-in-out;
-}
-.topnav .icon{
-  display:block;
-  
-}
-.sub-header{
-  display: inline;
-  align-items: center;
-  padding: 3rem;
-  
-}
+  .sub-headers {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1px 35px;
+  }
+
+  .topnav {
+    width: 100%;
+    background-color: hsla(0, 0%, 0%, 0.6);
+    flex-direction: column;
+    display: flex;
+    height: 0px;
+    overflow-y: hidden;
+    position: absolute;
+    transition: all 0.4s ease-in-out;
+  }
+  .subnav {
+    position: relative;
+  }
+  .open {
+    width: 100%;
+    background-color: hsla(0, 0%, 0%, 0.6);
+    flex-direction: column;
+    display: flex;
+    height: 210px;
+    transition: all 0.4s ease-in-out;
+  }
+  .topnav .icon {
+    display: block;
+  }
+  .sub-header {
+    display: inline;
+    align-items: center;
+    padding: 3rem;
+  }
 }
 @media (max-width: 425px) {
   .topnav.responsive li {
